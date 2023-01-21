@@ -1,0 +1,91 @@
+.modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #F9EAA2;
+    border-radius: 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    height: 280px;
+}
+
+h2 {
+    color: gray;
+    margin-bottom: 60px;
+}
+
+.user-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 5rem;
+    width: 5rem;
+}
+
+.user-content .user {
+    color: gray;
+    margin: 10px;
+    height: 10rem;
+    width: 9rem;
+}
+
+.user-content .password {
+    color: gray;
+    height: 10rem;
+    width: 9rem;
+}
+
+.user-content .btn-continue button {
+    margin-top: 20px;
+    background-color: #C2AA30;
+    color: white;
+    height: 30px;
+    width: 85px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.user-content .btn-continue button:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px #C2AA30;
+    transition: all 0.2s ease;
+}
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
